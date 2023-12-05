@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<af:componentDef xmlns:af="http://xmlns.oracle.com/adf/faces/rich" var="attrs" componentVar="comp" definition="private"
+                 xmlns:afc="http://xmlns.oracle.com/adf/faces/rich/component">
+    <af:xmlContent>
+        <afc:component>
+            <afc:description/>
+            <afc:display-name>myMenuBar</afc:display-name>
+            <afc:facet>
+                <afc:facet-name>moreMenus</afc:facet-name>
+            </afc:facet>
+            <afc:attribute>
+                <afc:attribute-name>menuLabel</afc:attribute-name>
+                <afc:attribute-class>java.lang.String</afc:attribute-class>
+            </afc:attribute>
+            <afc:component-extension>
+                <afc:component-tag-namespace>component</afc:component-tag-namespace>
+                <afc:component-taglib-uri>/mycomponents</afc:component-taglib-uri>
+                <afc:method-attribute>
+                    <afc:attribute-name>method1</afc:attribute-name>
+                    <afc:method-signature>void method(javax.faces.event.ActionEvent)</afc:method-signature>
+                </afc:method-attribute>
+            </afc:component-extension>
+        </afc:component>
+    </af:xmlContent>
+    <af:menuBar id="dc_mb1">
+        <af:menu text="File" id="dc_m1">
+            <af:commandMenuItem id="dc_cmi2" text="#{attrs.menuLabel}" icon="#{resource['images:19-gear.png']}"/>
+            <af:commandMenuItem text="Delete" id="dc_cmi1" icon="#{resource['images:delete.png']}"/>
+        </af:menu>
+    </af:menuBar>
+</af:componentDef>
