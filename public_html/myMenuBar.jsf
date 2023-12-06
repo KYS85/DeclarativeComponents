@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <af:componentDef xmlns:af="http://xmlns.oracle.com/adf/faces/rich" var="attrs" componentVar="comp" definition="private"
                  xmlns:afc="http://xmlns.oracle.com/adf/faces/rich/component">
-    <af:xmlContent>
+    <af:xmlContent> 
         <afc:component>
             <afc:description/>
             <afc:display-name>myMenuBar</afc:display-name>
